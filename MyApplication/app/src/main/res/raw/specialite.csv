@@ -1,0 +1,6 @@
+﻿SPE_ID;SPE_LABEL;SPE_PARENT;SPE_FILS;active
+1;Médecine générale;0;1;1
+2;Cardiologie;0;0;1
+3;Pédiatrie;1;0;1
+4;Gynécologie/obstétrique;0;0;1
+5;Diabétologie;1;0;1

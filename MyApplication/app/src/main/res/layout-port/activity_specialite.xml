@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/rootSpecialite"
+    android:background="@drawable/background_gris"
+    style="@style/MatchParent.Center">
+
+    <LinearLayout
+        android:id="@+id/infosDansSpecialite"
+        android:layout_weight="5"
+        style="@style/Infos">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Ville : "/>
+            <TextView
+                android:id="@+id/specialite_ville"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+            <TextView
+                style="@style/description_label"
+                android:text="Choix de la spécialité"/>
+        </LinearLayout>
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/fragmentSpecialite"
+            android:name="com.bf.camedical.e_rendezvous.FragmentGrid"
+            tools:layout="@layout/fragment_grid_specialite"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+</LinearLayout>

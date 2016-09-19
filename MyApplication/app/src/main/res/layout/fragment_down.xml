@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:id="@+id/btnLaunch"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:text="lancer"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_lancer_style" />
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnEnd"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:text="annuler"
+            android:background="@drawable/btn_annuler_style_gris"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+    <TextView
+        android:text="telechargement en cours..."
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/downloadText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            style="@android:style/Widget.ProgressBar.Horizontal"/>
+        <TextView
+            android:id="@+id/percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0 %"
+           />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:text="Mise à jour en cours..."
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/updateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ProgressBar
+            android:id="@+id/updateProgressBar"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            style="@android:style/Widget.ProgressBar.Horizontal"/>
+        <TextView
+            android:id="@+id/updatePercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0 %"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

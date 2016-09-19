@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gris">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/background_gris"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/layout_ville"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/background"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gris"
+        android:orientation="vertical"
+        android:layout_weight="2">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/fragmentVilles"
+            android:name="com.bf.camedical.e_rendezvous.FragmentGrid"
+            tools:layout="@layout/fragment_grid_specialite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"/>
+        <ImageView
+            android:id="@+id/img_ville"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+</LinearLayout>

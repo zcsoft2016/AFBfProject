@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/rootSpecialite"
+    android:background="@drawable/background_gris"
+    style="@style/MatchParent.Center">
+
+    <LinearLayout
+        android:id="@+id/infosDansSpecialite"
+        style="@style/Infos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3.2"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:text="Ville : " />
+            <TextView
+                android:id="@+id/specialite_ville"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gris"
+        android:layout_weight="1.8"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/description_label"
+                android:text="Choix de la spécialité"/>
+        </LinearLayout>
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/fragmentSpecialite"
+            android:name="com.bf.camedical.e_rendezvous.FragmentGrid"
+            tools:layout="@layout/fragment_grid_specialite"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="2dp"
+            style="@style/WrapParent"
+            android:layout_height="255dp" />
+    </LinearLayout>
+</LinearLayout>

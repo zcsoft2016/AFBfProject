@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bf.camedical.e_rendezvous" >
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23">
+    </uses-sdk>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.BIND_TELECOM_CONNECTION_SERVICE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".ContextProvider"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SpecialiteActivity"
+            android:label="@string/title_activity_specialite" >
+        </activity>
+        <activity
+            android:name=".DateActivity"
+            android:label="@string/title_activity_date" >
+        </activity>
+        <activity
+            android:name=".CliniqueActivity"
+            android:label="@string/title_activity_clinique" >
+        </activity>
+        <activity
+            android:name=".CreneauActivity"
+            android:label="@string/title_activity_creneau" >
+        </activity>
+        <activity
+            android:name=".LoadingActivity"
+            android:label="@string/title_activity_loading" >
+        </activity>
+        <activity
+            android:name=".VilleActivity"
+            android:label="@string/title_activity_ville" >
+        </activity>
+    </application>
+
+</manifest>

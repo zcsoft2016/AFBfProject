@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gris">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/banniere_logo"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="38dp">
+            <Button
+                android:id="@+id/prendreRdv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/button_style"
+                android:text="Prendre un rendez-vous"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"/>
+         </LinearLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/infos_pager"
+        android:layout_width="438dp"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" />
+
+</LinearLayout>

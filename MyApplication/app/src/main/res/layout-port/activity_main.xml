@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gris">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo_with_text"
+            android:id="@+id/logoo" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/infos_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:maxHeight="200dp"
+            tools:context=".MainActivity"
+            android:layout_weight="5" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="0dp"
+        android:gravity="center">
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/prendreRdv"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/button_style"
+            android:drawableLeft="@drawable/steto2"
+            android:paddingLeft="10dp"
+            android:text="Prendre un rendez-vous"
+            android:textColor="#FFFFFF"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"/>
+    </LinearLayout>
+
+</LinearLayout>

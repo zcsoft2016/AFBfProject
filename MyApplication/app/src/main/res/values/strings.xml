@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">E-Rendez Vous</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_specialite">Specialite</string>
+    <string name="title_activity_date">Date</string>
+    <string name="title_activity_clinique">Clinique</string>
+    <string name="title_activity_creneau">Creneau</string>
+    <string name="title_activity_loading">Mise à Jour</string>
+    <string name="title_activity_ville">Localité</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txtbtnConfirm">Confirmer</string>
+    <string name="recap_ville_label">Ville :</string>
+    <string name="recap_spe_label">Specialité :</string>
+    <string name="txt_choix_clinique">Choix de la clinique</string>
+    <string name="recap_clinique_label">Clinique :</string>
+    <string name="recap_date_label">Date :</string>
+    <string name="txt_btn_validrdv">Valider le RDV</string>
+    <string name="txt_creneaurdv">Creneau de rendez vous :</string>
+    <string name="txt_choixdaterdv">Choix de la date de rendez-vous</string>
+    <string name="txt_btn_validate">Valider la date</string>
+</resources>
